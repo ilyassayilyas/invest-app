@@ -1,8 +1,7 @@
 import { Chart as ChartJS, registerables } from "chart.js";
 import { Line } from "react-chartjs-2";
-ChartJS.register(...registerables);
-
 import { coinHistoryInterface } from "../../types";
+ChartJS.register(...registerables);
 
 interface CoinProps {
   currentCoinPrice: number;
