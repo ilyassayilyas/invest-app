@@ -1,0 +1,153 @@
+:root {
+  --footer-header-height: 3.5rem;
+}
+
+.mainPage,
+.coinPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  justify-content: space-between;
+  width: 100%;
+  height: var(--footer-header-height);
+  padding: 3rem;
+}
+
+.headerRightElements {
+  height: 80%;
+}
+
+.appLogo {
+  height: calc(1.5 * (var(--footer-header-height)));
+  width: calc(1.89 * (1.5 * var(--footer-header-height)));
+}
+
+.footer {
+  width: 100%;
+  height: var(--footer-header-height);
+  margin: 1rem;
+}
+
+.jusanLogo {
+  width: calc(3 * var(--footer-header-height) / 2);
+  height: calc(var(--footer-header-height) / 2);
+}
+
+.cardTicker {
+  text-align: center;
+}
+
+.board {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.boardContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.boardHeader {
+  color: #000080;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "League Gothic", sans-serif;
+}
+
+.boardFooter {
+  color: #1034a6;
+  text-align: center;
+  font-family: "League Gothic", sans-serif;
+  font-size: 1.75rem;
+}
+
+.boardFooter:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.coinPage {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.cardHeader {
+  border-bottom: 1px solid grey;
+}
+
+.cardLink {
+  text-decoration: none;
+}
+
+.coinPageContent {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  flex-grow: 1;
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.coinDescription {
+  width: 85%;
+  justify-self: center;
+  padding: 1rem;
+  grid-column: span 2;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.coinDescription p {
+  text-align: justify;
+}
+.coinDescription h3 {
+  color: #000080;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.coinDescription h2 {
+  color: #000080;
+  text-align: center;
+}
+
+.coinStats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.coinStats h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.coinChart {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.coinChart h2 {
+  display: inline;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chartSelector {
+  padding: 0;
+  color: #000080;
+}
+
+.chartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
